@@ -43,5 +43,4 @@ FROM OrderDetails
 join Products on Products.ProductID=OrderDetails.ProductID
 group by Products.ProductID
 order by count(*) desc
-limit 1
-offset 1
+limit 1 offset 1
