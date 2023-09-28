@@ -22,7 +22,7 @@ join Products on Products.ProductID=OrderDetails.ProductID
 
 4. Вывести ко-во стран, которые поставляют напитки
 SELECT count(distinct Suppliers.country) as TotalCountryCount_Beverages 
-FROM [Products]
+FROM Products
 join Suppliers on Suppliers.SupplierID=Products.SupplierID
 join Categories on Categories.CategoryID=Products.CategoryID
 where Categories.CategoryName='Beverages'
